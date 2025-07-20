@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { AddCategory, GiftGrid } from './components';
+import './index.css';
 
 {/*Componente principal. Este componente estará dividido en tres partes*/}
 export const GiftExpertApp = () => {
     /* Uso de hook useState para almancenar varias categorias. Agregar valor inicial al estado*/
     // Se inicializará como un arreglo categorias cuyo primer valor de categoría será One Punch
     // Para mofigicar este arreglo de categories, usamos el metodo setCategories
-    const [categories, setCategories] = useState([ 'One Punch' ]);
+    const [categories, setCategories] = useState([]);
 
     // Agregar nuevo elemento al listado de categorias
     const onAddCategory = ( newCategory ) => {
@@ -22,7 +23,7 @@ export const GiftExpertApp = () => {
     return (
         <>
             {/* Titulo */}
-            <h1>Gift Expert App</h1>
+            <h1 className='main-title'>Gift Expert App</h1>
 
             {/* Input */}
             {/* Se agrega una propiedad a AddCategories donde se pasa la referencia a la funcion setCategories */}
@@ -43,8 +44,6 @@ export const GiftExpertApp = () => {
                 )) 
             }
             
-                {/* Gift Item */}
-
         </>
     );
 };

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './AddCategory.css';
 
 // Props setCategories pasadas de GiftExpertApp.jsx
 export const AddCategory = ( { onNewCategory } ) => {
@@ -32,8 +33,9 @@ export const AddCategory = ( { onNewCategory } ) => {
         // {/* Type, placeholder y value son conocidos como properties aqui, no como atributos html */}
         <form onSubmit={ (event) => onSubmit( event ) }>
             <input 
+                className='input-buscar'
                 type='text' 
-                placeholder='Buscar Gifs' 
+                placeholder='Buscar Gifs...' 
                 value={ inputValue }
                 onChange={ (event) => onInputChange(event) } 
             />

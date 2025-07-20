@@ -1,10 +1,11 @@
 * {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: rgb(234, 234, 234);
+  /* background-color: rgb(207, 207, 207); */
 }
 
 body {
   padding: 60px;
+  background-color: rgb(207, 207, 207);
 }
 
 input {
@@ -37,7 +38,7 @@ h3 {
 .card {
   align-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgb(53, 53, 53);
   border-radius: 10px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
   display: flex;
@@ -50,9 +51,9 @@ h3 {
 }
 
 .card p {
-  background-color: white;
+  color: white;
   flex: 1;
-  font-size: 1.5rem;
+  font-size: 12px;
   margin-top: 5px;
   padding: 5px 20px 0px 20px;
   text-align: center;
